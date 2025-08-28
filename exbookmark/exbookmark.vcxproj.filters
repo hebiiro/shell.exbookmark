@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="framework">
+      <UniqueIdentifier>{fbf7ebbc-3e71-43bd-8d22-d58648640f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="com">
+      <UniqueIdentifier>{133bdd97-ef19-4623-88b1-e2a039b6b216}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="hive.hpp" />
+    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="unknown.hpp">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="context_menu.hpp">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="class_factory.hpp">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="folder_tree.hpp" />
+    <ClInclude Include="server.hpp">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="entry_base.hpp">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="entry.hpp">
+      <Filter>com</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="main.def">
+      <Filter>framework</Filter>
+    </None>
+    <None Include="register_and_restart_safe.ps1" />
+  </ItemGroup>
+</Project>
